@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <style>
+	header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px 20px; 
+  font-size: 24px; 
+
+}
 	 .slideshow-container {
     max-width: 100%;
     position: relative;
@@ -123,7 +139,9 @@ h4 {
     <h1>Destiny bought us together and now love will seal our bond forever'</h1>
     <h3>Coordially Inviting You</h3>
     <p>to share in the magic of our wedding ceremony</p>
-    <h2>Supriya & Phani</h2>
+	<header>
+    <h1>Supriya & Phani</h1>
+	</header>
     <p>on Sunday, 28th April 2023</p>
     <div class="bride-groom-images">
         <div>
@@ -164,7 +182,7 @@ h4 {
     
     </div>
 <h2>Engagement Moments</h2>
-    <div class="slideshow-container">
+	<div class="slideshow-container">
         
 <p></p>
         <img src="engaged.JPG" alt="Engagement Moment 1">
@@ -194,7 +212,7 @@ h4 {
       slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = 'block';
-    setTimeout(showSlides, 2000); 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds (2000 milliseconds)
   }
 
   function plusSlides(n) {
@@ -215,3 +233,7 @@ h4 {
 </div>
 
 </body>
+</html>
+
+
+
